@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>My shop</title>
+</head>
+<body class="theme-light">
+    <div class="header">  
+        <div class="headerMenu">
+            <a class="laptop" href="#laptop_link">Ноутбуки</a>
+            <a class="smartphone" href="#smartphone_link">Смартфоны</a>
+            <a class="headphones" href="#headphones_link">Наушники</a>
+            <a class="routers" href="#routers_link">Роутеры</a>
+            <button id="selectTheme" class="btnTheme" onclick="darkLight()">Переключить тему</button>
+        </div>
+    </div>
+    <div class="containeer" id="laptop_link">
+        <div class="window_buy">
+            <form class="form_buy">
+                <div class="radio_label">
+                    <p>Выберите цвет:</p>
+                        <label>Черный
+                            <input type="radio" name="color" checked/>
+                            <span></span>
+                          </label>
+                          <label>Графитовый
+                            <input type="radio" name="color" />
+                            <span></span>
+                          </label>
+                          <label>Металлик
+                            <input type="radio" name="color" />
+                            <span></span>
+                          </label>
+                    </label>
+                </div>
+                <div class="input_qty">
+                    <p class="text_qty">Введите количество:</p>
+                    <input type="number" step="1" min="1" max="100" value="1" id="qty" class="enter_qty">
+                </div>
+                <p class="text_comments">Комментарии:</p>
+                    <textarea name="text" class="input_comments" maxlength="2000" placeholder="введите комментарии(необязательно)"></textarea>
+                <div class="btn_end">
+                    <input type="submit" value="Купить" class="btn_buy">
+                    <input type="submit" value="Закрыть" class="btn_close">
+                </div>
+            </form>
+        </div>
+        <img src="./img/UP.png" class="btnUp">
+        <h3 id="smartphone_link">Ноутбуки</h3>
+        <div class="containeer_laptop">
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_huawei.avif">
+                <p class="card_text">HUAWEI<br>MateBook D15 i5/8GB/512GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p>
+                <button class="card_buy">Купить<br>49 999 ₽</button>
+                              
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_honor.avif">
+                <p class="card_text">Honor<br>MagicBook 16 R5/16/512</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>49 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_thunderobot.avif">
+                <p class="card_text">Thunderobot<br>911 Plus X (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>55 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_asus.jpg">
+                <p class="card_text">ASUS<br>TUF Gaming F15 (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>72 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_msi.avif">
+                <p class="card_text">MSI<br>Katana GF76 (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>109 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_air.avif">
+                <p class="card_text">Apple<br>MacBook Air 13.3</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>93 990 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_macPro.avif">
+                <p class="card_text">Apple<br>MacBook Pro 14 M2 Pro</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>219 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_macPro2.avif">
+                <p class="card_text">Apple<br>MacBook Pro 14 M1 Pro</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>229 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_haier.jpg">
+                <p class="card_text">Haier<br>Intel Celeron N4020</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>22 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_acer.avif">
+                <p class="card_text">Acer<br>A515-45-R958</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>51 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_MSI GF63.avif">
+                <p class="card_text">MSI<br>GF63 Thin 11UC (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>79 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_Thunderobot 911 X.avif">
+                <p class="card_text">Thunderobot<br>911 X Wild Hunter D (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>94 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_Acer Nitro 5.avif">
+                <p class="card_text">Acer<br>Nitro 5 AN515-57 (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>69 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_Lenovo IdeaPad.avif">
+                <p class="card_text">Lenovo<br>IdeaPad Gaming 3 (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>69 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/laptop_MSI Raider.avif">
+                <p class="card_text">MSI<br>Raider GE77HX (игровой)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>269 999 ₽</button>
+            </div>
+        </div>
+        <h3 id="headphones_link">Смартфоны</h3>
+        <div class="containeer_smartphone">
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_galaxy.avif">
+                <p class="card_text">Samsung<br>Galaxy S23+ 512GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>97 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_galaxyS24.avif">
+                <p class="card_text">Samsung<br>Galaxy A54 256GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>37 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_honor.avif">
+                <p class="card_text">Honor<br>X7A 4/128GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>12 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_vivo.avif">
+                <p class="card_text">Vivo<br>V27e 8/256GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>24 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_iPhone14promax.avif">
+                <p class="card_text">Apple<br>iPhone 14 Pro Max 128GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>115 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_iPhone11.avif">
+                <p class="card_text">Apple<br>iPhone 11 64GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>46 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_iPhone14pro.avif">
+                <p class="card_text">Apple<br>iPhone 14 Pro 128GB</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>107 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_realmepro9.avif">
+                <p class="card_text">Realme<br>9 Pro 5G</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>16 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_vivoY35.avif">
+                <p class="card_text">Vivo<br>Y35 4/64Gb</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>10 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/smart_realme9.avif">
+                <p class="card_text">Xiaomi<br>Redmi A1+ 32Gb</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>4 999 ₽</button>
+            </div>
+        </div>
+        <h3>Наушники</h3>
+        <div id="headphones_link" class="containeer_headphone">
+            <div class="card_product">
+                <img class="card_img" src="./img/head_Honor_Choice.avif">
+                <p class="card_text">Honor Choice<br>True Wireless EarBuds X3 Lite</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>1 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_AirPods.avif">
+                <p class="card_text">Apple AirPods<br>3rd generation Lightning</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>17 499 ₽</button>
+            </div>
+            <div class="card_product" id="routers_link">
+                <img class="card_img" src="./img/head_Honor_Choice_EarBuds.avif">
+                <p class="card_text">Honor Choice<br>True Wireless EarBuds X3</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>3 499 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_AirPods_Pro.avif">
+                <p class="card_text">Apple AirPods Pro<br>with MagSafe Charging Case</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>18 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_HUAWEI_Freebuds.avif">
+                <p class="card_text">Xiaomi<br>Redmi A1+ 32Gb</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>4 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_JBL_Tune.avif">
+                <p class="card_text">JBL Tune<br>Bluetooth JBL Tune510BT</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>4 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_Samsung_Galaxy.jpg">
+                <p class="card_text">Samsung Galaxy<br>True Wireless Buds Live</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>7 499 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_Tecno.avif">
+                <p class="card_text">Tecno<br>True Wireless SC01 Sonic 1</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>2 499 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_JBL_Tune_230NC.avif">
+                <p class="card_text">JBL Tune<br>True Wireless 230NC TWS </p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>6 499 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/head_Soundcore.avif">
+                <p class="card_text">Soundcore<br>Bluetooth Life Tune</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>7 999 ₽</button>
+            </div>
+        </div>
+        <h3>Роутеры</h3>
+        <div class="containeer_routers">
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_HUAWEI AX2.avif">
+                <p class="card_text">HUAWEI<br>AX2 WS7001-22</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>3 499 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_HUAWEI WS.avif">
+                <p class="card_text">HUAWEI<br>WS5200 V3</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>2 799 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_TP-Link Archer.avif">
+                <p class="card_text">TP-Link<br>Archer A54 AC1200</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>2 799 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_Keenetic Giga.avif">
+                <p class="card_text">Keenetic<br>Giga (KN-1011) AX1800</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>10 999 ₽</button>
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_Keenetic Speedster.avif">
+                <p class="card_text">Keenetic<br>Speedster (KN-3012)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>5 999 ₽</button> 
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_Keenetic Start.avif">
+                <p class="card_text">Keenetic<br>Start (KN-1112) N300</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>1 999 ₽</button> 
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_TP-Link Archer A8.avif">
+                <p class="card_text">TP-Link<br>Archer A8 AC1900</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>3 999 ₽</button> 
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_HUAWEI WS7.avif">
+                <p class="card_text">HUAWEI<br>WS7200 (AX3) AX3000</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>4 799 ₽</button> 
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_Keenetic Viva.avif">
+                <p class="card_text">Keenetic<br>Viva (KN-1912)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>6 499 ₽</button> 
+            </div>
+            <div class="card_product">
+                <img class="card_img" src="./img/rout_Keenetic Hero.avif">
+                <p class="card_text">Keenetic<br>Hero 4G (KN-2310)</p>
+                <p class="text_date">Дата добавления на сайт:</p>
+                <p class="card_date"></p> 
+                <button class="card_buy">Купить<br>9 999 ₽</button> 
+            </div>
+            <div class="containeer_info">
+                <div class="info_laptop" id="info_laptop_link">
+                    <h1>Какой ноутбук лучше подходит для игр</h1>
+                    <p>Для запуска нетребовательных игр ноутбук вашей мечты должен иметь такие минимальные параметры:</p>
+                    <ul type="square">
+                        <li>накопитель объемом от 512 ГБ</li>
+                        <li>8-16 ГБ оперативной памяти</li>
+                        <li>процессор Intel Core i5 12-го поколения или AMD Ryzen 5 6-го поколения</li>
+                        <li>видеокарта RTX 3050 и RTX 3050 Ti или AMD Radeon RX 6500M.</li>
+                    </ul>
+                    <p>По-настоящему мощная сборка, способная потянуть любую современную игру на максималках, выглядит примерно так:</p>
+                    <ul type="square">
+                        <li>накопитель объемом от 1 ТБ</li>
+                        <li>16-32 ГБ ОЗУ</li>
+                        <li>процессор Intel Core i7 или Core i9 12-го поколения или AMD Ryzen 7 или Ryzen 9 6-го поколения</li>
+                        <li>видеокарта NVIDIA GeForce RTX 3070 (RTX 3080) или AMD Radeon RX 6700M.</li>
+                    </ul>
+                    <h3 id="info_smartphone_link">Краткая инструкция по выбору:</h3>
+                    <ul type="square">
+                        <li>Определиться с бюджетом на покупку</li>
+                        <li>Определиться с основными характеристиками (объем памяти и количество накопителей, объем памяти ОЗУ, процессором и видеокартой, наличие предустановленной операционной системы, диагональ дисплея)</li>
+                        <li>Определиться с дополнительными параметрами (дизайн, подсветка, наличие дополнительных аксессуаров в комплекте)</li>
+                        <li>Почитать о понравившихся моделях отзывы и посмотреть обзоры – как правило, в них можно найти интересную дополнительную информацию о плюсах и минусах, раскрывающихся только в процессе использования.</li>
+                    </ul>
+                </div>
+                <div class="info_smartphone" id="info_headphones_link">
+                    <h1>Лучшие смартфоны 2023 года: флагманские модели</h1>
+                    <p>В мире мобильных гаджетов поколения смартфонов сменяют друг друга с завидной регулярностью. 
+                        После прошедшей в Барселоне выставки MWC 2023 уже можно подвести промежуточный итог, какие модели зададут тон на рынке смартфонов в первой половине 2023 года.
+                         В этом году производители будут удивлять покупателей гибкими экранами, сверхбыстрыми зарядками и камерами с выдающимися характеристиками.</p>
+                    <ul type="square">
+                        <li>Apple iPhone 14 Pro и Pro Max</li>
+                        <li>Samsung Galaxy S23 Ultra</li>
+                        <li>HUAWEI Mate 50 Pro</li>
+                        <li>Tecno Phantom X2 Pro</li>
+                        <li>Realme GT3</li>
+                        <li>HONOR Magic5 Pro</li>
+                        <li>Xiaomi 13 Pro</li>
+                        <li>Pixel 7 Pro</li>
+                        <li>OPPO Find N2 Flip</li>
+                    </ul>
+                </div>
+                <div class="info_headphones">
+                    <h1>Какие наушники безопасны для слуха</h1>
+                    <h3>ЛОР рассказал, какие наушники наиболее безопасны для слуха</h3>
+                    <p>Люди, занятые на шумных и пыльных производствах, находятся в зоне риска наступления глухоты.
+                         Об этом в эфире радиостанции «Говорит Москва» предупредил кандидат медицинских наук, врач сурдолог-оториноларинголог Витаутас Киселюс.</p>
+                    <p>«Наиболее безопасные наушники — наружные, которые надеваются сверху на голову, с шумоподавлением — тоже хорошая вещь. 
+                        Наушники, которые не надо вкручивать в слуховой проход, наиболее безопасные. Если вы работаете в шумном, пыльном производстве, на стройке, наушники желательны. 
+                        Это снизит риск травмы слухового прохода. Наиболее рисковая группа — электросварщики, которым окалина может залететь в ухо. 
+                        Постоянный шум всегда вреден для уха, нужно защищать его от избыточного шума».</p>
+                    <p>Воздействие громкого звука на органы слуха приведёт к его снижению и травме, отметил ЛОР.</p>
+                    <p>«Наушники — инородное тело. Нередко уши травмируются за счёт регулярного использования берушей и наушников. 
+                        Зачастую громкость, при которой слушают музыку или разговаривают по телефону, избыточна. Такой звук может приводить к акустической травме. 
+                        Есть понятие — профессиональное заболевание слуха, когда человек работает на шумном производстве, котельные, самолёты, двигатели, 
+                        это всегда со временем негативно сказывается на слухе. То же самое происходит и в отношении наушников. Если человек часто злоупотребляет громкостью, 
+                        например, в шумном виде транспорта — метро, вы будете нашими пациентами. 
+                        Многие хотят носить наушники, при этом никто не хочет использовать слуховой аппарат».</p>
+                </div>
+                <div class="info_routers" id="info_routers_link">
+                    <h1>Мощность роутера для квартиры</h1>
+                    <p>В вопросе выбора роутера Wi-Fi для квартиры имеет значение площадь дома — именно от нее зависит нужная зона покрытия. 
+                        Практика показывает, что в условиях городской среды тип антенн не играет принципиальной роли. 
+                        Но если площадь большая, количество внешних антенн стоит увеличить для лучшего покрытия.</p>
+                    <ul type="square">
+                        <li>Если площадь не превышает 50 м², то для хорошего покрытия всех комнат достаточно 
+                            современного двухдиапазонного маршрутизатора с четырьмя антеннами по 5 dBi.</li>
+                        <li>Если площадь доходит до 80 м², то одного устройства уже не хватит для стабильного приема сигнала. 
+                            Придется устанавливать повторитель Wi-Fi или второй маршрутизатор в режиме репитера.</li>
+                        <li>Если квартира больше 100 м², стоит задуматься о полноценной Mesh-системе, состоящей из 2−3 модулей. 
+                            Они расставляются по помещениям равномерно и обеспечивают полноценный охват всей площади.</li>
+                    </ul>
+                    <p>По остальным параметрам выбор роутера зависит от количества человек, которые пользуются беспроводной сетью, 
+                        количества техники, которой нужна раздача, и возможностей оператора связи.</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerMenu">
+            <p class="footerText">Категории:</p>
+            <ul type="square">
+                <li class="footer_link"><a href="#laptop_link">Ноутбуки</a></li>
+                <li class="footer_link"><a href="#smartphone_link">Смартфоны</a></li>
+                <li class="footer_link"><a href="#headphones_link">Наушники</a></li>
+                <li class="footer_link"><a href="#routers_link">Роутеры</a></li>
+            </ul>
+            <p class="footerText">Полезные статьи:</p>
+            <ul type="square">
+                <li class="footer_link"><a href="#routers_link">Какой ноутбук лучше подходит для игр</a></li>
+                <li class="footer_link"><a href="#info_smartphone_link">Какой смартфон самый популярный в 2023 году</a></li>
+                <li class="footer_link"><a href="#info_headphones_link">Какие наушники безопасны для слуха</a></li>
+                <li class="footer_link"><a href="#info_routers_link">Мощность роутера для квартиры</a></li>
+            </ul>
+            <p class="footerText">Контакты для связи:</p>
+            <ul type="square">
+                <li class="footer_link"><a href="https://t.me/cspckt">Телеграм: @cspckt</a></li>
+                <li class="footer_link"><a href="tel:+79215702271">Телефон: 89215702271</a></li>
+                <li class="footer_link"><a href="mailto:konst.mih.ter@gmail.com">Почта: konst.mih.ter@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="./dark.js"></script>
+    <script type="text/javascript" src="./btn_up.js"></script>
+    <script type="text/javascript" src="./date.js"></script>
+    <script type="text/javascript" src="./buy_form.js"></script>
+</body>
+</html>
