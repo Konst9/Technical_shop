@@ -1,7 +1,12 @@
+let p = document.querySelector(".card_date").textContent;
+let time = new Date(p);
+let res = document.querySelectorAll(".card_date");
 
-let date = new Date(2023, 4, 12);
-function getDate(date) {
-  let days = [
+function addLeadingZero(d) {
+    return d<10 ? "0" + d : d;
+}
+
+const days = [        
     "Воскресенье",
     "Понедельник",
     "Вторник",
@@ -9,8 +14,8 @@ function getDate(date) {
     "Четверг",
     "Пятница",
     "Суббота"
-  ];
-  let month = [
+];
+const month = [
     "Января",
     "Февраля",
     "Марта",
@@ -23,22 +28,20 @@ function getDate(date) {
     "Октября",
     "Ноября",
     "Декабря"
-  ];
-  let result = days[date.getDay()] +
-    ", " +
-    Math.floor(31 / date.getDate()) +
-    " неделя " +
-    month[date.getMonth()] +
-    " " +
-    date.getFullYear() +
-    " года";
-    return result;
+]
+
+
+function getUserTime(t=time) {
+        let Y = t.getFullYear();
+        let M = month[t.getMonth()];
+        let D = addLeadingZero(t.getDate());
+        let W = Math.floor((D/7)+1);
+        let d= days[t.getDay()]
+        return `${d}, ${W} неделя ${M} ${Y} года`;
 }
 
-  let res = document.querySelector(".card_date");
-
-  document.addEventListener("DOMContentLoaded", function () {
-    for (let res of document.querySelectorAll(".card_date")) {
-      res.innerHTML = getDate(date);
+document.addEventListener("DOMContentLoaded", function () {
+    for (let elem of res) {  
+      elem.innerHTML = getUserTime();
     }
   });
